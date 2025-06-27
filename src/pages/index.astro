@@ -9,5 +9,11 @@ import Reviews from "@/components/Reviews.astro";
 	title="TINVEL Gestoría Contable: Expertos en contabilidad y fiscalidad para empresas y particulares. Optimiza tus finanzas y cumple tus obligaciones fiscales con nosotros.">
 	
 	<Hero />
-	<Reviews />
+	<section class="relative bg-[url(/fondo1.webp)] bg-cover bg-center min-h-screen w-full">
+		<div class="absolute inset-0 bg-blue-100 opacity-95"></div>
+		<div class="relative z-10">
+			<!-- Contenido de la sección -->
+			<Reviews />
+		</div>
+	</section>
 </Layout>

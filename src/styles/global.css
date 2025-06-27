@@ -1,1 +1,17 @@
 @import "tailwindcss";
+
+body {
+  font-family: 'Onest Variable', sans-serif;
+}
+
+.underline-blue {
+  @apply relative;
+}
+
+.underline-blue::after {
+  @apply absolute block h-0.5 w-48 -bottom-2.5 left-1/2 -translate-x-1/2;
+  content: '';
+  background-color: #11048b;
+}
+
+
