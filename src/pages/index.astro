@@ -2,18 +2,28 @@
 import Layout from "@/layouts/Layout.astro";
 import Hero from "@/components/Hero.astro";
 import Reviews from "@/components/Reviews.astro";
-
+import Numeros from "@/components/Numeros.astro";
+import Services from "@/components/Services.astro";
 ---
 
 <Layout description="Tinvel Gestoria Contable" 
 	title="TINVEL Gestoría Contable: Expertos en contabilidad y fiscalidad para empresas y particulares. Optimiza tus finanzas y cumple tus obligaciones fiscales con nosotros.">
 	
 	<Hero />
-	<section class="relative bg-[url(/fondo1.webp)] bg-cover bg-center min-h-screen w-full">
-		<div class="absolute inset-0 bg-blue-100 opacity-95"></div>
+	<section class="relative bg-[url(/fondo1.jpg)] bg-cover bg-center min-h-screen w-full">
+		<div class="absolute inset-0 bg-sky-50 opacity-95"></div>
 		<div class="relative z-10">
 			<!-- Contenido de la sección -->
 			<Reviews />
+			<Numeros />
+		</div>
+	</section>
+
+	<section class="relative bg-[url(/fondo3.jpg)] bg-cover bg-center min-h-screen w-full">
+		<div class="absolute inset-0 bg-sky-50 opacity-95"></div>
+		<div class="relative z-10">
+			<!-- Contenido de la sección -->
+			<Services />
 		</div>
 	</section>
 </Layout>
