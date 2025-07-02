@@ -9,7 +9,7 @@ export interface Props{
 
 const {title, description, icon} = Astro.props
 ---
-<div class="p-5 sm:p-6 lg:p-8 rounded-3xl border border-box-border bg-gray-100 shadow-lg shadow-box-shadow relative overflow-hidden hover:border-blue-100 hover:bg-blue-100 hover:shadow-2xl transition-all duration-300">
+<div class="p-5 sm:p-6 lg:p-8 rounded-3xl bg-gray-100 shadow-lg shadow-box-shadow relative overflow-hidden hover:border-blue-100 hover:bg-blue-100 hover:shadow-2xl transition-all duration-300">
     <div class="relative z-10 space-y-4 h-full">
         <div class="w-12 h-12 bg-sky-500 rounded-2xl flex justify-center items-center">
             <Fragment set:html={icon} />
